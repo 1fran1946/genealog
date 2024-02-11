@@ -1,0 +1,2163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href= "data:image/gif;base64,R0lGODlhEAAQAPcAAMpjyP35/P7+/sgzm74AfMcdhv34+/79/sssj8UmlPv0+v38/dF2zq4AnM9euv////HG4L0AVL8ASsAATb0AWuuv1NV0w64BnLIAlK8Ad9hfrtEbb8QAJv7w/8IAJNEKb9t0trEAerkGjrIAaLwAWt9fn/bY5swAD/K+2PbW4cgABvHA3uBzqrwAXLMAbLgEjPPT6dNFl8AAS8UAMfNhhf8dO/+KnP+rp/8ILf93jsMAOcAASs80kfHK5fvr8eA4dtwAGk5a/0UypTE2xz09rTsuq0BK+O0ADNciafri7u693EVx4VVXG01bJW9hIR9OFQ8tt///6O/A3cAAdr4ARssAP9wLSv9PdwAAX19PNoB+jJpETB4cBgAAov9SYdUCS8wAQsEAd78ATc8AUOEqZP93mgAAbJ6RctDW1tnb1+jtzDM98P97f9onadAAU8AAUsEBePPP5v/59QABegAIAAAAAAYrOtXJwDZX6f/dyfPR5/bV49wdZOUAGpFw56lqxpE1tYI3uKxXzJOH8+YAAtQIWPbH3e7B4cwri78AScUANfJ7nPUQOP+Jm/+qqvAAIveLo8MAQL0ASckcheu33LcCjbIAar0AX+J0rvPH3MsAEvTE2/bc5ccAC/Cw1OWJubwAX7QAbbYBjbIAla8Aet10us8RasMAK//0/8EAKM0Aa+CIwrAAfa4BndRzxO242roAV70AUL8AUb0AXuehzduIzq4CntB2z/z3+8Urmb0Af8Yfiv35+8ovksEek/rw+NeJ1gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFewAPACwAAAAAEAAQAAAI/wABNMAgAoYAJVPCxBFwqNKoVrcCOMgwIsaDB1TEXERkiZSrBQIeaCAhw8eDKmMe7El0qdQDAQEulpjx44EVMg/4KMJ0EdcACBdpAHlwpYycPosuvspFIMIGEw+CLMFiZo6fB5lMwdJVQAKHEzWEMMlyhs4fRppOxdpl4EEHFDaGNNGCpg6gRptQPeB14GKKG0ScbEljJ5AjThcPIJjgQQWOIk+4qLkj6FGnVLJ6EaDwYcUDI1C6rMEz6IEnVbN0JahwMceRKF7Y5CEE6SItXwoustCB5MGXNg8KRfp08VdIEC12JHkAxs0DQ5JArXq5wEIIFzwuSnhzcVIoVrUOMBO4gOFFDwFSpsDRI4CSqFG2gAUEADs=">
+
+
+<link rel="stylesheet" href="sw/swiper-bundle.min.css" /> 
+  <title>Генеалогия</title>
+  
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">  
+  <style>
+  :root {--x: 318px;}/*  318 */
+  :root {--y: 131px;}  
+  /*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+  width: 0;
+}
+  
+  *:not(hr), *::after, *::before {box-sizing: border-box;margin:0;padding:0;border:0}ul {list-style-type: none}
+#i{padding: 33px 0;background: linear-gradient(rgba(0,0,0,0.9), blue); 
+text-align: center;
+}
+table {
+background: #ded;border:2px solid violet;}
+table,td{padding:3px;border:5px solid violet;border-collapse: collapse;border-spacing: 0;}
+.avatar1 { border-radius: 99px; width: 120px; border: 4px solid violet; transition: .2s ease}
+.avatar1:hover {  cursor: pointer; animation:shake-horizontal 0.8s linear both} @keyframes shake-horizontal{0%,100%{transform:translateX(0)}10%,30%,50%,70%{transform:translateX(-10px)}20%,40%,60%{transform:translateX(10px)}80%{transform:translateX(8px)}90%{transform:translateX(-8px)}
+}
+
+#soc{margin: auto;display: flex;width: fit-content;}
+/*swiper-container*****/
+.swy3 {
+  margin: 0 auto;
+  width: var(--x);
+  height: var(--y);
+  overflow: hidden;
+  background:yellow;
+}  
+.slid1{padding:0 30px; 
+		display:grid;
+		place-items:center;
+		}
+		
+/**/
+/*swiper-container_2*****/
+.swy3_2 {
+  margin: 0 auto;
+  width: var(--x);
+  height: var(--y);
+  overflow: hidden;
+  background:yellow;
+}  
+.slid1_2{padding:0 30px; 
+		display:grid;
+		place-items:center;
+		}
+		
+/**/
+/**/
+/*swiper-container_3*****/
+.swy3_3 {
+  margin: 0 auto;
+  width: var(--x);/*418px;*/
+  height: var(--y);
+  overflow: hidden;
+}  
+.slid1_3{padding:0 30px; 
+		display:grid;
+		place-items:center;
+		}
+		
+/**/
+/*swiper-container_4*****/
+.swy3_4 {
+  margin: 0 auto;
+  width: var(--x);
+  height: var(--y);
+  overflow: hidden;
+}  
+.slid1_4{padding:0 30px; 
+		display:grid;
+		place-items:center;
+		}		
+/**/
+
+
+
+
+
+
+
+.bodyaf::after{
+content:attr(data-x);
+font-size:35px;
+color:white;
+position:absolute;
+top: 9px;
+left:50%;
+t0ransform: translate(500%, 0);
+
+}		
+.g{font-family: monospace;color: gray;}
+/*********/
+.art2{display: flex; align-items: center;}
+
+.avatar2 { border-radius: 99px; 
+	s0rc: url(https://xsgames.co/randomusers/avatar.php?g=male);	
+	width: 30px; height:30px; a0spect-ratio:1;
+	border: 1px solid #333; transition: .2s ease;}
+.avatar2:hover{transform: scale(2.0);cursor: none;}
+.avatar3 {
+margin-bottom: -10px;
+ border-radius: 50%; width: 20px; height: 20px;
+ border: 1px solid #333; transition: .2s ease;
+}
+.avatar3:hover{transform: scale(2.0);cursor: none;}
+
+
+
+.vem1{font-size:10px;text-align:left;padding-right:11px;}
+
+.vem2,.vem5{	width: 25px;
+		background: none;
+		border: none;
+		text-align: center;	
+		flex-direction:column;	
+		align-items: center;}
+.vem2 div
+		{width: 25px;
+		text-align: left;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		}
+
+.vem5 div
+		{width: 25px;
+		text-align: center;
+		overflow: hidden;
+		white-space: nowrap;
+		}
+		
+.vem2 div span,
+.vem5 div span{				
+		margin-top: 3px;
+		line-height: 1px;
+		font-size: 7px;
+		
+		}
+.vem3{display:inline-flex;align-items: center;}	  
+.vem3 p{font-size:10px;text-align:left;padding-right:11px;}
+.vem4 {width:37px;background: none;border:none;overflow:hidden;text-overflow: ellipsis;
+text-align: center;
+}
+.vem4 span{margin-top:3px;line-height:1px; font-size:7px;}		
+		
+
+.wr1{display:flex; justify-content: center;}  
+#wr11{display: flex;align-items:center;}
+  #wr2{display:flex; justify-content: center;align-items: center; flex-wrap: wrap;}
+  #wr21{margin-right:33px; background: none;border: none;
+  padding:0 14px;}
+#wr3{display:flex; justify-content: center; j0ustify-content: flex-start;}
+#wr31{margin-right:33px; background: none;border: none;}
+  #wr4{display:flex; justify-content: flex-start;}
+  #wr41{margin-right:33px; background: none;border: none;padding-left:65px;}
+
+/**/
+
+.b_left:hover, .b_right:hover {transform-origin: 50% 150%;transform: scale(1.5);}
+
+.pec{font-size: 14px;}
+.leno{min-height:14px;}
+.dendy {margin: 2px; width: 40px; height: 40px;}
+
+
+#mapka {
+display:block;
+margin:0;
+transition: 1s;
+}
+#mapka > .fon {fill: #e5e1bb;}
+
+.kon {margin:0;}
+.kon td{border:0;}
+
+.b_left {position:absolute;left:5px;top:50%;
+    transform-origin(0,50%);
+	transform: translatey(-50%);
+	z-index:4;cursor: pointer;
+	width:20px;aspect-ratio:.5;background: #ded;}
+
+.b_right {position:absolute;right:5px;top:50%;
+    
+	transform: translatey(-50%);
+	transform-origin(0,50%);
+	z-index:4;cursor: pointer;
+	width:20px;aspect-ratio:.5;background: #ded;}
+	
+.number_note {font-size:16px; color:red;}	
+line {stroke: white; stroke-width: 6px;}
+/* style="text-align: center;"*/
+#serw {position: fixed; top:0px; left:100vw; width:100vw;height: 100%;background: #777;
+z-index:11;transition: .5s;}
+#ami {display: flex;justify-content: end;}
+#jeep {padding: 2px 8px;border:1px solid blue; width:100%;}
+#syyr {padding:2px 15px; border:2px solid blue;}
+.kon {border-collapse:collapse;border:0;background: none;}
+#enots {color: white;padding-left:20px;} 
+#nemo {color: white;padding-left:20px;} 
+#ser {width:100%;height: 100%;background: #eee;
+overflow-y: auto; padding-left:20px;} 
+#arow {width: 50px;background: 
+#eee; color:white;} 
+#aro {clip-path: polygon(35% 0, 0 10%, 56% 50%, 0 90%, 33% 100%, 100% 50%);
+	width:20px;aspect-ratio:.5;background: violet;}
+  </style>  
+</head>
+<body text="black" bgcolor="white" data-x="">
+
+<button 
+id="fwd"
+style="
+position: fixed; top:100px; left:86px;
+background: coral;
+width:75px; aspect-ratio: 1;
+color:white;
+border-radius:50%;
+cursor: pointer;
+z-index: 7;
+"
+onclick="
+cur=+this.innerText;main(cur++);
+this.innerText=cur;
+bck.innerText=+cur-2;
+"
+>0</button>
+<button 
+id="bck"
+style="
+position: fixed; top:100px; left:5px;
+background: #e2b3ed;
+width:75px; aspect-ratio: 1;
+color:white;
+border-radius:50%;
+cursor: pointer;
+z-index: 7;
+"
+onclick="
+cur=+this.innerText;main(cur--);
+this.innerText=cur;
+fwd.innerText=+cur+2;
+"
+>0</button>
+
+
+
+<header style="background: tomato;display: flex; width: fit-content;">
+<button style="
+width:calc(100vw - 54px);
+max-width: 856px;
+height: 53px;background: blue;
+z-index:0;padding-left:20px; padding-top: 10px;text-align:left;" onclick="serw.style.left='0px';" >
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.91 12.806A6.964 6.964 0 017 14c-3.863 0-7-3.137-7-7s3.137-7 7-7 7 3.137 7 7a6.97 6.97 0 01-1.18 3.889l2.114 2.113a1.354 1.354 0 01-1.914 1.914l-2.11-2.11zM7 2.477A4.524 4.524 0 0111.523 7 4.524 4.524 0 017 11.523 4.524 4.524 0 012.477 7 4.524 4.524 0 017 2.477z" fill="white"></path></svg>
+
+ </button>	
+
+<!--  class="bi bi-qr-code" --> 
+
+<button style="width:54px;height: 53px;background: blue;
+z-index:10;padding-left:19px; padding-top: 10px;text-align:left;" onclick="qr.style.top='0px';" >
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
+  <path d="M2 2h2v2H2V2Z"/>
+  <path d="M6 0v6H0V0h6ZM5 1H1v4h4V1ZM4 12H2v2h2v-2Z"/>
+  <path d="M6 10v6H0v-6h6Zm-5 1v4h4v-4H1Zm11-9h2v2h-2V2Z"/>
+  <path d="M10 0v6h6V0h-6Zm5 1v4h-4V1h4ZM8 1V0h1v2H8v2H7V1h1Zm0 5V4h1v2H8ZM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8H6Zm0 0v1H2V8H1v1H0V7h3v1h3Zm10 1h-1V7h1v2Zm-1 0h-1v2h2v-1h-1V9Zm-4 0h2v1h-1v1h-1V9Zm2 3v-1h-1v1h-1v1H9v1h3v-2h1Zm0 0h3v1h-2v1h-1v-2Zm-4-1v1h1v-2H7v1h2Z"/>
+  <path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"/>
+</svg>
+</button>	
+</header> 
+
+<table id="card" style="z-index:4;">
+<tr id="tr1" data-vw="1"><td style="text-align:center;">parents</td></tr>
+<tr id="tr0" data-vw="1"><td style="text-align:center;">persone</td></tr>
+<tr id="tr05" data-vw="1"><td>
+ 	<div class="swiper-container swy3"
+	style="position:relative; background:none;"> 
+	<div class="swiper-wrapper">
+		<div class="swiper-slide slid1">
+			Lorem ipsum dolor sit amet
+		</div>		
+	  </div>
+	</div>
+
+</td></tr>
+<!---->
+<tr id="tr05_2" data-vw="1"><td>
+ 	<div class="swiper-container swy3_2"
+	style="position:relative; background:none;">
+
+	<div class="sw_btn_next_2 b_left" id="osa1_2"><div style="
+	clip-path: polygon(65% 0, 100% 10%, 44% 50%, 100% 90%, 67% 100%, 0 50%);
+	width:20px;aspect-ratio:.5;background: violet;"></div></div>
+	<div class="sw_btn_prev_2 b_right" id="osa2_2"><div style="
+	clip-path: polygon(35% 0, 0 10%, 56% 50%, 0 90%, 33% 100%, 100% 50%);
+	width:20px;aspect-ratio:.5;background: violet;"></div></div>	  
+	<div class="swiper-wrapper" style="">
+		<div class="swiper-slide slid1_2">
+			consectetur adipiscing elitorire  
+		</div>	
+		<div class="swiper-slide slid1_2"></div>	
+	  </div>
+	</div>
+</td></tr>
+<!---->
+<tr id="tr05_3" data-vw="1"><td style="">
+ 	<div class="swiper-container swy3_3"
+	style="position:relative; background:none;">
+
+	<div class="sw_btn_next_3 b_left" id="osa1_3"><div style="
+	clip-path: polygon(65% 0, 100% 10%, 44% 50%, 100% 90%, 67% 100%, 0 50%);
+	width:20px;aspect-ratio:.5;background: violet;"></div></div>
+	<div class="sw_btn_prev_3 b_right" id="osa2_3"><div style="
+	clip-path: polygon(35% 0, 0 10%, 56% 50%, 0 90%, 33% 100%, 100% 50%);
+	width:20px;aspect-ratio:.5;background: violet;"></div></div>	  
+	<div class="swiper-wrapper" style="">
+		<div class="swiper-slide slid1_3">
+			Laenean a dapibus magna, 
+		</div>	
+		<div class="swiper-slide slid1_3"></div>
+		<div class="swiper-slide slid1_3"></div>		
+	  </div>
+	</div>
+</td></tr>
+<!---->
+<tr id="tr05_4" data-vw="1"><td>
+ 	<div class="swiper-container swy3_4"
+	style="position:relative; background:none;">
+
+	<div class="sw_btn_next_4 b_left" id="osa1_4"><div style="
+	clip-path: polygon(65% 0, 100% 10%, 44% 50%, 100% 90%, 67% 100%, 0 50%);
+	width:20px;aspect-ratio:.5;background: violet;"></div></div>
+	<div class="sw_btn_prev_4 b_right" id="osa2_4"><div style="
+	clip-path: polygon(35% 0, 0 10%, 56% 50%, 0 90%, 33% 100%, 100% 50%);
+	width:20px;aspect-ratio:.5;background: violet;"></div></div>	  
+	<div class="swiper-wrapper" style="">
+		<div class="swiper-slide slid1_4">
+			ac interdum nisl. Suspendisse egetil
+		</div>	
+		<div class="swiper-slide slid1_4"></div>
+		<div class="swiper-slide slid1_4"></div>
+		<div class="swiper-slide slid1_4"></div>		
+	  </div>
+	</div>
+</td></tr>
+<!---->
+
+
+<tr id="tr-1" data-vw="0" style="display: none"><td style="">9</td></tr>
+<tr id="tr2" data-vw="1"><td style="">brower</td></tr>
+<tr id="tr3" data-vw="1"><td style="">husb</td></tr>
+<tr id="tr4" data-vw="1"><td style="">childs</td></tr>
+<tr id="tr5" data-vw="1"><td style="">mb-link</td></tr>
+<tr id="tr6" data-vw="1"><td style="height:210px;overflow: hidden; padding:0;" title="сюда могла быть">
+
+<div id="mawka" style="padding:0;width:calc(100vw - 10px);max-width:900px;background: #e5e1bb;" title="Карта Древа">
+<svg  id="mapka" width="1150" height="210" viewBox="0 0 6247 1144" fill="gold">
+<rect class="fon" x="0" y="0" width="6247" height="1144" />
+<g id="linx"></g>
+<g id="mens"></g>
+</svg>
+</div>
+
+</td></tr>
+
+</table>
+
+
+	
+	<!-- 407 тут карта поначалу -->
+
+
+	
+<!--
+Search on site
+-->
+
+
+<div id="serw" style="position: fixed; top:0px; left:100vw; width:100vw;height: 100%;background: #777;
+z-index:11;transition: .5s;
+">
+<div id="ami" style="display: flex;justify-content: end;">
+<input type="text" id="jeep" style="padding: 2px 8px;border:1px solid blue; width:100%;" value="Иван">
+<button id="syyr" onclick="seri(jeep.value)" style="padding:2px 15px; border:2px solid blue;"><strong>Search</strong></button>
+</div>
+
+<table class="kon" style="border-collapse:collapse;border:0;background: none;">
+<tr><td rowspan=2 valign="middle" align="center"
+id="arow"
+style="width: 50px;background: #eee; color:white;"
+
+onclick="serw.style.left='100vw';"
+>
+<div id="aro" style="
+	clip-path: polygon(35% 0, 0 10%, 56% 50%, 0 90%, 33% 100%, 100% 50%);
+	width:20px;aspect-ratio:.5;background: violet;"></div>
+
+</td><td><div id="enots" style="color: white;padding-left:20px;"><label><input type="checkbox" id="enot" checked> с фото</label></div></td></tr>
+<tr><td><div id="nemo" style="color: white;padding-left:20px;"></div></td></tr>
+
+</table>
+
+<div id="ser" style="width:100%;height: 100%;background: #eee;
+overflow-y: auto; padding-left:20px;
+"></div>
+</div>	
+	
+<!--
+qr code to site
+-->	
+<div id="qr" style="position: fixed; top:-100vh; left:0vw; width:100vw;height: 100vh;background-color: white;
+z-index:12;transition: .5s;
+background-image:url(rodqr.png);
+background-position: center 120px;
+background-size: 120px 120px;
+background-repeat: no-repeat;
+background-attachment: local;
+"
+
+onclick="qr.style.top='-100vh';"
+></div>
+	
+<script src="sw/swiper-bundle.min.js"></script>	 
+<script>
+'use strict';
+
+// Created by file:///C:/Users/Admin/Downloads/rodd/%D0%B3%D1%80/1%D1%87.html from гр.ged
+let pers=[
+
+{INDI: 1,
+NAME: 'Григорий Иванович /Орлов/',
+SEX: 'M',
+
+FSZ: 4,
+BIRT:{
+DATE: '1685',
+},
+DEAT:{
+DATE: '1746',
+},
+FAMC: 22,
+FAMS: [1],
+NOTE: [1]
+},
+{INDI: 2,
+NAME: 'Иван  //',
+SEX: 'M',
+JPG: 'i4002.jpg',
+FSZ: 4,
+PHOT: 'Иван Григорьевич Орлов.bmp',
+DEAT:{
+},
+FAMC: 1,
+FAMS: [2],
+},
+{INDI: 3,
+NAME: '  /Ртишева/',
+SEX: 'F',
+
+FSZ: 4,
+FAMS: [2],
+},
+{INDI: 4,
+NAME: 'Владимир  //',
+SEX: 'M',
+JPG: 'i4004.jpg',
+FSZ: 4,
+PHOT: 'Владимир Григорьевич Орлов.bmp',
+DEAT:{
+DATE: '1831',
+},
+FAMC: 1,
+FAMS: [15],
+NOTE: [2]
+},
+{INDI: 5,
+NAME: 'Григорий Григорьевич /Орлов/',
+SEX: 'M',
+JPG: 'i4005.jpg',
+FSZ: 4,
+PHOT: 'Григорий Григорьевич Орлов.bmp',
+BIRT:{
+DATE: '06 OCT 1734',
+PLAC: 'село Люткино Бежецкого уезда Тверской губернии',
+},
+DEAT:{
+DATE: '13 APR 1783',
+PLAC: 'москва',
+},
+FAMC: 1,
+FAMS: [3,18],
+NOTE: [3]
+},
+{INDI: 6,
+NAME: 'Фёдор  //',
+SEX: 'M',
+JPG: 'i4006.jpg',
+FSZ: 4,
+PHOT: 'Фёдор Григорьевич Орлов.bmp',
+DEAT:{
+DATE: '1796',
+},
+FAMC: 1,
+FAMS: [6,7,8],
+},
+{INDI: 7,
+NAME: 'Алексей  //',
+SEX: 'M',
+JPG: 'i4007.jpg',
+FSZ: 4,
+PHOT: 'Алексей Григорьевич Орлов.bmp',
+DEAT:{
+},
+FAMC: 1,
+FAMS: [4,5],
+NOTE: [4]
+},
+{INDI: 8,
+NAME: '  /Зиновьева/',
+SEX: 'F',
+JPG: 'i4008.jpg',
+FSZ: 4,
+PHOT: 'Екатерина Орлова.bmp',
+BIRT:{
+DATE: '1758',
+},
+DEAT:{
+DATE: '1781',
+},
+FAMS: [3],
+NOTE: [5]
+},
+{INDI: 9,
+NAME: 'Александр  /Чесменский/',
+SEX: 'M',
+
+FSZ: 4,
+BIRT:{
+DATE: '1763',
+},
+DEAT:{
+DATE: '1820',
+},
+FAMC: 4,
+},
+{INDI: 10,
+NAME: 'Анна  //',
+SEX: 'F',
+J0PG: 'i4010.jpg',
+FSZ: 4,
+PHOT: 'Анна Алексеевна.bmp',
+BIRT:{
+DATE: '1785',
+},
+DEAT:{
+DATE: '1848',
+},
+FAMC: 5,
+NOTE: [6]
+},
+{INDI: 11,
+NAME: 'Евдокия Николаевна /Лопухина/',
+SEX: 'F',
+JPG: 'i4011.jpg',
+FSZ: 4,
+PHOT: 'Орлова ев.bmp',
+BIRT:{
+DATE: '1761',
+},
+DEAT:{
+DATE: '1786',
+},
+FAMS: [5],
+},
+{INDI: 12,
+NAME: 'Владимир  //',
+SEX: 'M',
+
+FSZ: 4,
+DEAT:{
+},
+FAMC: 6,
+},
+{INDI: 13,
+NAME: 'Фёдор  //',
+SEX: 'M',
+
+FSZ: 4,
+DEAT:{
+},
+FAMC: 6,
+},
+{INDI: 14,
+NAME: 'Елизавета  //',
+SEX: 'F',
+
+FSZ: 4,
+DEAT:{
+},
+FAMC: 6,
+},
+{INDI: 15,
+NAME: '  /Попова/',
+SEX: 'F',
+
+FSZ: 4,
+DEAT:{
+},
+FAMS: [7],
+},
+{INDI: 16,
+NAME: '  /Ярославова/',
+SEX: 'F',
+
+FSZ: 4,
+DEAT:{
+},
+FAMS: [8],
+NOTE: [7]
+},
+{INDI: 17,
+NAME: 'Анна  //',
+SEX: 'F',
+
+FSZ: 4,
+DEAT:{
+},
+FAMC: 7,
+},
+{INDI: 18,
+NAME: 'Григорий  //',
+SEX: 'M',
+
+FSZ: 4,
+DEAT:{
+},
+FAMC: 8,
+},
+{INDI: 19,
+NAME: 'Михаил Федорович //',
+SEX: 'M',
+JPG: 'i4019.jpg',
+FSZ: 4,
+PHOT: '1 орл мих фед.bmp',
+BIRT:{
+DATE: '25 MAR 1788',
+},
+DEAT:{
+DATE: '19 MAR 1842',
+},
+FAMC: 8,
+NOTE: [8]
+},
+{INDI: 20,
+NAME: 'Алексей  //',
+SEX: 'M',
+
+FSZ: 4,
+DEAT:{
+},
+FAMC: 8,
+FAMS: [9],
+},
+{INDI: 21,
+NAME: '  /Жеребцова/',
+SEX: 'F',
+
+FSZ: 4,
+DEAT:{
+},
+FAMS: [9],
+},
+{INDI: 22,
+NAME: 'Николай  //',
+SEX: 'M',
+
+FSZ: 4,
+BIRT:{
+DATE: '1827',
+},
+DEAT:{
+DATE: '1885',
+},
+FAMC: 9,
+NOTE: [9]
+},
+{INDI: 23,
+NAME: 'Наталья  //',
+SEX: 'F',
+
+FSZ: 4,
+FAMC: 15,
+FAMS: [10],
+},
+{INDI: 24,
+NAME: 'Петр  /Давыдов/',
+SEX: 'M',
+
+FSZ: 4,
+DEAT:{
+},
+FAMS: [10],
+},
+{INDI: 25,
+NAME: 'Владимир  /Орлов-Давыдов/',
+SEX: 'M',
+JPG: 'i4025.jpg',
+FSZ: 4,
+PHOT: '1влад орл дав.bmp',
+BIRT:{
+DATE: '1809',
+},
+DEAT:{
+DATE: '1882',
+},
+FAMC: 10,
+FAMS: [11],
+NOTE: [10]
+},
+{INDI: 26,
+NAME: 'Ольга Ивановна /Барятинская/',
+SEX: 'F',
+JPG: 'i4026.jpg',
+FSZ: 4,
+PHOT: '1ольга  иван.bmp',
+BIRT:{
+DATE: '1814',
+},
+DEAT:{
+DATE: '1876',
+},
+FAMS: [11],
+},
+{INDI: 27,
+NAME: 'Анатолий  //',
+SEX: 'M',
+JPG: 'i4027.jpg',
+FSZ: 4,
+PHOT: '1анатолий сын.bmp',
+BIRT:{
+DATE: '1837',
+},
+DEAT:{
+DATE: '1905',
+},
+FAMC: 11,
+FAMS: [12],
+NOTE: [11]
+},
+{INDI: 28,
+NAME: 'Владимир  //',
+SEX: 'M',
+JPG: 'i4028.jpg',
+FSZ: 4,
+PHOT: '1влал орл дав.bmp',
+BIRT:{
+DATE: '1837',
+},
+DEAT:{
+DATE: '1870',
+},
+FAMC: 11,
+NOTE: [12]
+},
+{INDI: 29,
+NAME: 'Наталья  //',
+SEX: 'F',
+JPG: 'i4029.jpg',
+FSZ: 4,
+PHOT: '1наталья.bmp',
+BIRT:{
+DATE: '1833',
+},
+DEAT:{
+DATE: '1885',
+},
+FAMC: 11,
+FAMS: [13],
+},
+{INDI: 30,
+NAME: 'Мария Егоровна /Толстая/',
+SEX: 'F',
+JPG: 'i4030.jpg',
+FSZ: 4,
+PHOT: '1жена анатолия.bmp',
+BIRT:{
+DATE: '1843',
+},
+DEAT:{
+DATE: '1895',
+},
+FAMC: 14,
+FAMS: [12],
+NOTE: [13]
+},
+{INDI: 31,
+NAME: 'Дмитрий Николаевич /Долгоруков/',
+SEX: 'M',
+
+FSZ: 4,
+BIRT:{
+DATE: '1827',
+},
+DEAT:{
+DATE: '1910',
+},
+FAMS: [13],
+},
+{INDI: 32,
+NAME: 'Владимир  //',
+SEX: 'M',
+J0PG: 'i4032.jpg',
+FSZ: 4,
+BIRT:{
+DATE: '1865',
+},
+DEAT:{
+DATE: '1936',
+},
+FAMC: 12,
+},
+{INDI: 33,
+NAME: 'Георгий  //',
+SEX: 'M',
+J0PG: 'i4033.jpg',
+FSZ: 4,
+BIRT:{
+DATE: '186?',
+},
+DEAT:{
+DATE: '1870',
+},
+FAMC: 12,
+},
+{INDI: 34,
+NAME: 'Александр  //',
+SEX: 'M',
+J0PG: 'i4034.jpg',
+FSZ: 4,
+BIRT:{
+DATE: '1869',
+},
+DEAT:{
+DATE: '1935',
+},
+FAMC: 12,
+},
+{INDI: 35,
+NAME: 'Алексей  //',
+SEX: 'M',
+JPG: 'i4035.jpg',
+FSZ: 4,
+PHOT: '1 алй орл дав.bmp',
+BIRT:{
+DATE: '1872',
+},
+DEAT:{
+DATE: '1935',
+},
+FAMC: 12,
+NOTE: [14]
+},
+{INDI: 36,
+NAME: 'Мария  //',
+SEX: 'F',
+J0PG: 'i4036.jpg',
+FSZ: 4,
+BIRT:{
+DATE: '1876',
+},
+DEAT:{
+DATE: '1878',
+},
+FAMC: 12,
+},
+{INDI: 37,
+NAME: 'Егор Петрович /Толстой/',
+SEX: 'M',
+JPG: 'i4037.jpg',
+FSZ: 4,
+PHOT: '1 егор толстой.bmp',
+DEAT:{
+},
+FAMS: [14],
+},
+{INDI: 38,
+NAME: 'Григорий  //',
+SEX: 'M',
+JPG: 'i4038.jpg',
+FSZ: 4,
+PHOT: '1григ влад.bmp',
+DEAT:{
+},
+FAMC: 15,
+},
+{INDI: 39,
+NAME: 'Софья  //',
+SEX: 'F',
+JPG: 'i4039.jpg',
+FSZ: 4,
+PHOT: '1софья панина.bmp',
+DEAT:{
+},
+FAMC: 15,
+FAMS: [17],
+},
+{INDI: 40,
+NAME: 'Екатерина  //',
+SEX: 'F',
+JPG: 'i4040.jpg',
+FSZ: 4,
+PHOT: '1катя новосил.bmp',
+DEAT:{
+},
+FAMC: 15,
+FAMS: [16],
+},
+{INDI: 41,
+NAME: '  /Новосильцев/',
+SEX: 'M',
+J0PG: 'i4041.jpg',
+FSZ: 4,
+FAMS: [16],
+NOTE: [15]
+},
+{INDI: 42,
+NAME: '  /Панин/',
+SEX: 'M',
+J0PG: 'i4042.jpg',
+FSZ: 4,
+FAMS: [17],
+NOTE: [16]
+},
+{INDI: 43,
+NAME: 'Елизавета Ивановна //',
+SEX: 'F',
+JPG: 'i4043.jpg',
+FSZ: 4,
+PHOT: '1елизав ивановна.bmp',
+DEAT:{
+},
+FAMS: [15],
+},
+{INDI: 44,
+NAME: 'Екатерина II //',
+SEX: 'F',
+JPG: 'i4044.jpg',
+FSZ: 4,
+PHOT: '1 екатерина вторая.bmp',
+DEAT:{
+},
+FAMS: [18],
+},
+{INDI: 45,
+NAME: 'Алексей Григорьевич /Бобринский/',
+SEX: 'M',
+JPG: 'i4045.jpg',
+FSZ: 4,
+PHOT: '1 бобр.bmp',
+BIRT:{
+DATE: '22 APR 1762',
+PLAC: 'Зимний дворец',
+},
+DEAT:{
+DATE: '02 JUL 1813',
+PLAC: 'Богородицк',
+},
+FAMC: 18,
+FAMS: [19],
+NOTE: [17]
+},
+{INDI: 46,
+NAME: 'Анна  /Унгерн-Штернберг/',
+SEX: 'F',
+JPG: 'i4046.jpg',
+FSZ: 4,
+PHOT: '1 бобр жена.bmp',
+BIRT:{
+DATE: '1769',
+},
+DEAT:{
+DATE: '1846',
+},
+FAMS: [19],
+},
+{INDI: 47,
+NAME: 'Алексей  //',
+SEX: 'M',
+JPG: 'i4047.jpg',
+FSZ: 4,
+PHOT: '1 бобр сын алекс.bmp',
+BIRT:{
+DATE: '1800',
+},
+DEAT:{
+DATE: '1868',
+},
+FAMC: 19,
+FAMS: [21],
+},
+{INDI: 48,
+NAME: 'Василий  //',
+SEX: 'M',
+JPG: 'i4048.jpg',
+FSZ: 4,
+PHOT: '1 бобр сын вася.bmp',
+BIRT:{
+DATE: '1804',
+},
+DEAT:{
+DATE: '1874',
+},
+FAMC: 19,
+NOTE: [18]
+},
+{INDI: 49,
+NAME: 'Мария  //',
+SEX: 'F',
+JPG: 'i4049.jpg',
+FSZ: 4,
+PHOT: '1 бобр маша дочь.bmp',
+BIRT:{
+DATE: '1798',
+},
+DEAT:{
+DATE: '1835',
+},
+FAMC: 19,
+FAMS: [20],
+},
+{INDI: 50,
+NAME: 'Николай Сергеевич /Гагарин/',
+SEX: 'M',
+J0PG: 'i4050.jpg',
+FSZ: 4,
+BIRT:{
+DATE: '1784',
+},
+DEAT:{
+DATE: '1842',
+},
+FAMS: [20],
+},
+{INDI: 51,
+NAME: 'Софья Александровна /Самойлова/',
+SEX: 'F',
+JPG: 'i4051.jpg',
+FSZ: 4,
+PHOT: '1 бобр невестка соф.bmp',
+BIRT:{
+DATE: '1797',
+},
+DEAT:{
+DATE: '1866',
+},
+FAMS: [21],
+},
+{INDI: 52,
+NAME: 'Павел  //',
+SEX: 'M',
+J0PG: 'i4052.jpg',
+FSZ: 4,
+BIRT:{
+DATE: '1801',
+},
+DEAT:{
+DATE: '1830',
+PLAC: 'убит на дуэли во Флоренции',
+},
+FAMC: 19,
+},
+{INDI: 53,
+NAME: 'Лукерья Ивановна /Зиновьева/',
+SEX: 'F',
+J0PG: 'i4053.jpg',
+FSZ: 4,
+DEAT:{
+},
+FAMS: [1],
+},
+{INDI: 54,
+NAME: 'Иван  //',
+SEX: 'M',
+J0PG: 'i4054.jpg',
+FSZ: 4,
+DEAT:{
+},
+FAMS: [23],
+},
+{INDI: 55,
+NAME: 'Иван  //',
+SEX: 'M',
+J0PG: 'i4055.jpg',
+FSZ: 4,
+BIRT:{
+DATE: '1627',
+},
+DEAT:{
+DATE: '1658',
+},
+FAMC: 23,
+FAMS: [24],
+NOTE: [19]
+},
+{INDI: 56,
+NAME: 'Тарас  //',
+SEX: 'M',
+J0PG: 'i4056.jpg',
+FSZ: 4,
+DEAT:{
+},
+FAMC: 23,
+FAMS: [26],
+NOTE: [20]
+},
+{INDI: 57,
+NAME: 'Григорий  //',
+SEX: 'M',
+J0PG: 'i4057.jpg',
+FSZ: 4,
+DEAT:{
+},
+FAMC: 23,
+NOTE: [21]
+},
+{INDI: 58,
+NAME: 'Дмитрий  //',
+SEX: 'M',
+J0PG: 'i4058.jpg',
+FSZ: 4,
+DEAT:{
+},
+FAMC: 24,
+FAMS: [25],
+NOTE: [22]
+},
+{INDI: 59,
+NAME: 'Иван  //',
+SEX: 'M',
+J0PG: 'i4059.jpg',
+FSZ: 4,
+DEAT:{
+},
+FAMC: 25,
+NOTE: [23]
+},
+{INDI: 60,
+NAME: 'Василий  //',
+SEX: 'M',
+J0PG: 'i4060.jpg',
+FSZ: 4,
+DEAT:{
+},
+FAMC: 26,
+FAMS: [27],
+},
+{INDI: 61,
+NAME: 'Иван  //',
+SEX: 'M',
+J0PG: 'i4061.jpg',
+FSZ: 4,
+DEAT:{
+},
+FAMC: 27,
+FAMS: [28],
+NOTE: [24]
+},
+{INDI: 62,
+NAME: 'Иван  //',
+SEX: 'M',
+J0PG: 'i4062.jpg',
+FSZ: 4,
+DEAT:{
+},
+FAMC: 28,
+FAMS: [22],
+NOTE: [25]
+},
+{INDI: 63,
+NAME: 'Никита  //',
+SEX: 'M',
+J0PG: 'i4063.jpg',
+FSZ: 4,
+BIRT:{
+DATE: '1671',
+},
+DEAT:{
+DATE: '1692',
+},
+FAMC: 27,
+FAMS: [29],
+NOTE: [26]
+},
+{INDI: 64,
+NAME: 'Григорий Никитич //',
+SEX: 'M',
+J0PG: 'i4064.jpg',
+FSZ: 4,
+DEAT:{
+},
+FAMC: 29,
+NOTE: [27]
+
+
+},];
+
+
+let fam=[
+{FAM: 1,
+HUSB: 1,
+WIFE: 53,
+CHIL: [2,4,5,6,7,],
+},
+{FAM: 2,
+HUSB: 2,
+WIFE: 3,
+},
+{FAM: 3,
+HUSB: 5,
+WIFE: 8,
+},
+{FAM: 4,
+HUSB: 7,
+CHIL: [9,],
+},
+{FAM: 5,
+HUSB: 7,
+WIFE: 11,
+CHIL: [10,],
+},
+{FAM: 6,
+HUSB: 6,
+CHIL: [12,13,14,],
+},
+{FAM: 7,
+HUSB: 6,
+WIFE: 15,
+CHIL: [17,],
+},
+{FAM: 8,
+HUSB: 6,
+WIFE: 16,
+CHIL: [18,19,20,],
+},
+{FAM: 9,
+HUSB: 20,
+WIFE: 21,
+CHIL: [22,],
+},
+{FAM: 10,
+HUSB: 24,
+WIFE: 23,
+CHIL: [25,],
+},
+{FAM: 11,
+HUSB: 25,
+WIFE: 26,
+CHIL: [29,28,27,],
+},
+{FAM: 12,
+HUSB: 27,
+WIFE: 30,
+CHIL: [36,35,34,33,32,],
+},
+{FAM: 13,
+HUSB: 31,
+WIFE: 29,
+},
+{FAM: 14,
+HUSB: 37,
+CHIL: [30,],
+},
+{FAM: 15,
+HUSB: 4,
+WIFE: 43,
+CHIL: [23,40,39,38,],
+},
+{FAM: 16,
+HUSB: 41,
+WIFE: 40,
+},
+{FAM: 17,
+HUSB: 42,
+WIFE: 39,
+},
+{FAM: 18,
+HUSB: 5,
+WIFE: 44,
+CHIL: [45,],
+},
+{FAM: 19,
+HUSB: 45,
+WIFE: 46,
+CHIL: [52,49,48,47,],
+},
+{FAM: 20,
+HUSB: 50,
+WIFE: 49,
+},
+{FAM: 21,
+HUSB: 47,
+WIFE: 51,
+},
+{FAM: 22,
+HUSB: 62,
+CHIL: [1,],
+},
+{FAM: 23,
+HUSB: 54,
+CHIL: [57,56,55,],
+},
+{FAM: 24,
+HUSB: 55,
+CHIL: [58,],
+},
+{FAM: 25,
+HUSB: 58,
+CHIL: [59,],
+},
+{FAM: 26,
+HUSB: 56,
+CHIL: [60,],
+},
+{FAM: 27,
+HUSB: 60,
+CHIL: [63,61,],
+},
+{FAM: 28,
+HUSB: 61,
+CHIL: [62,],
+},
+{FAM: 29,
+HUSB: 63,
+CHIL: [64,],
+},];
+
+
+
+let note=[
+{NOTE: 1,
+CONT: ['Новгородский губернатор'],
+},
+{NOTE: 2,
+CONT: ['Прожил 88 лет. На нем прервалась мужская линия Орловых'],
+},
+{NOTE: 3,
+CONT: ['Фаворит Екатерины II<br>',
+'4 незаконнорожденных детей'],
+},
+{NOTE: 4,
+CONT: ['За победу в Чесменском бою генерал-аншеф граф Алексей Григорьевич Орлов награждён 22 сентября (3 октября) ',
+'1770 года орденом Св. Георгия 1 класса, а также получил право присоединить к фамилии своей проименование ',
+'«Чесменский» и именоваться графом Орловым-Чесменским.'],
+},
+{NOTE: 5,
+CONT: ['двоюродная сестра и жена бывшего фаворита Екатерины II князя Григория Орлова.'],
+},
+{NOTE: 6,
+CONT: [' камер-фрейлина, единственная дочь Алексея Орлова, сподвижника императрицы Екатерины II, и наследница его ',
+'многомиллионного состояния.'],
+},
+{NOTE: 7,
+CONT: ['подполковница'],
+},
+{NOTE: 8,
+CONT: [' генерал-майор, декабрист, внебрачный сын графа Фёдора Григорьевича Орлова. Генерал-майор,',
+' подписывал капитуляцию Парижа в 1814 году, состоя флигель-адъютантом <br> императора Александра I',],
+},
+{NOTE: 9,
+CONT: ['дипломат,  писатель'],
+},
+{NOTE: 10,
+CONT: ['с 1856 года Орлов-Давыдов. похоронен в отраде в москве'],
+},
+{NOTE: 11,
+CONT: ['близнец Владимира'],
+},
+{NOTE: 12,
+CONT: ['симбирский губернатор'],
+},
+{NOTE: 13,
+CONT: ['фрейлина, миллионерша'],
+},
+{NOTE: 14,
+CONT: ['Граф Алексей Анатольевич Орлов-Давыдов (13 декабря 1871 — 19 января 1935, Париж) — русский ','общественный деятель и политик из третьего поколения Орловых-Давыдовых. ','Член IV Государственной думы от Калужской губернии.'],
+},
+{NOTE: 15,
+CONT: ['бригадир'],
+},
+{NOTE: 16,
+CONT: ['граф'],
+},
+{NOTE: 17,
+CONT: ['внебрачный сын императрицы Екатерины II и Григория Григорьевича Орлова, владелец имения Бобрики, ',
+'родоначальник графского рода Бобринских.'],
+},
+{NOTE: 18,
+CONT: ['декабрист'],
+},
+{NOTE: 19,
+CONT: [' при Михаиле Федоровиче встречаем мы Орловых дворян московских: Ивана Ивановича (1627-58 гг.), Тараса ',
+'Ивановича (стряпчего 1636 г. и тогда же записанного в московский список) и Герасима Ивановича (тоже стряпчего ',
+'в 1636 году). У Ивана Ивановича был сын Дмитрий Иванович (дворянин московский 1676 года), имевший сына ',
+'Ивана Дмитриевича, стольника царицы Прасковьи Федоровны (1692 года). Тогда как Тарас Иванович имел сына Василия',
+],
+},
+{NOTE: 20,
+CONT: ['(стряпчего 1636 г. и тогда же записанного в московский список'],
+},
+{NOTE: 21,
+CONT: ['(тоже стряпчего в 1636 году'],
+},
+{NOTE: 22,
+CONT: ['дворянин московский 1676 года'],
+},
+{NOTE: 23,
+CONT: [' стольника царицы Прасковьи Федоровны (1692 года)'],
+},
+{NOTE: 24,
+CONT: ['стряпчего 1683 г., стольника 1686 г'],
+},
+{NOTE: 25,
+CONT: ['стряпчего царицы Прасковьи Федоровны 1692 года). Этот Иван Иванович Орлов и был отцом новгородского ',
+'губернатора Григория Ивановича, потому что тот считал своим троюродным братом Григория Никитича, бывшего ',
+'при Екатерине II гофмаршалом, а отец его — Никита Андреевич был стольник (1671-1692 г.), сын Василия же ',
+'Тарасовича, родной брат Ивана Васильевича, его деда.'],
+},
+{NOTE: 26,
+CONT: ['Никита Андреевич был стольник (1671-1692 г.)'],
+},
+{NOTE: 27,
+CONT: ['при Екатерине II гофмаршал'],
+}];
+
+let metr=[];//
+
+
+let team=[];// все события жизни отдельной персоны
+
+
+
+
+//******* координаты спрайтов
+//Created by C:\Users\Admin\Downloads\rodd\гр\json1.exe
+//Total length: 1658, min-x: 1658, max-n: 0
+let coor={NumMan: 64, a1: [
+{x: 716, y: 131},
+{x: 85, y: 228},
+{x: 0, y: 228},
+{x: 144, y: 261},
+{x: 619, y: 244},
+{x: 1085, y: 240},
+{x: 871, y: 251},
+{x: 726, y: 248},
+{x: 827, y: 349},
+{x: 915, y: 341},
+{x: 936, y: 253},
+{x: 985, y: 334},
+{x: 1084, y: 335},
+{x: 1157, y: 338},
+{x: 1624, y: 249},
+{x: 1302, y: 229},
+{x: 1658, y: 350},
+{x: 1248, y: 342},
+{x: 1343, y: 349},
+{x: 1446, y: 348},
+{x: 1537, y: 348},
+{x: 1495, y: 452},
+{x: 679, y: 361},
+{x: 752, y: 357},
+{x: 856, y: 530},
+{x: 1004, y: 525},
+{x: 570, y: 638},
+{x: 859, y: 655},
+{x: 1018, y: 647},
+{x: 214, y: 631},
+{x: 1127, y: 646},
+{x: 285, y: 744},
+{x: 381, y: 749},
+{x: 694, y: 748},
+{x: 485, y: 751},
+{x: 591, y: 747},
+{x: 210, y: 496},
+{x: 385, y: 368},
+{x: 94, y: 361},
+{x: 298, y: 373},
+{x: 176, y: 374},
+{x: 15, y: 363},
+{x: 259, y: 268},
+{x: 406, y: 265},
+{x: 459, y: 383},
+{x: 552, y: 396},
+{x: 411, y: 503},
+{x: 500, y: 511},
+{x: 580, y: 511},
+{x: 657, y: 521},
+{x: 306, y: 500},
+{x: 736, y: 509},
+{x: 816, y: 130},
+{x: 743, y: -294},
+{x: 557, y: -203},
+{x: 730, y: -203},
+{x: 841, y: -207},
+{x: 550, y: -115},
+{x: 557, y: -47},
+{x: 715, y: -136},
+{x: 723, y: -73},
+{x: 724, y: -7},
+{x: 626, y: -72},
+{x: 625, y: -3},
+],
+a2: [
+{x: 786, y: 171},
+{x: 127, y: 268},
+{x: 66, y: 268},
+{x: 220, y: 301},
+{x: 689, y: 284},
+{x: 1139, y: 280},
+{x: 935, y: 291},
+{x: 826, y: 288},
+{x: 915, y: 389},
+{x: 983, y: 381},
+{x: 1026, y: 293},
+{x: 1061, y: 374},
+{x: 1138, y: 375},
+{x: 1235, y: 378},
+{x: 1682, y: 289},
+{x: 1404, y: 269},
+{x: 1700, y: 390},
+{x: 1318, y: 382},
+{x: 1411, y: 389},
+{x: 1510, y: 388},
+{x: 1623, y: 388},
+{x: 1563, y: 492},
+{x: 743, y: 401},
+{x: 822, y: 397},
+{x: 990, y: 570},
+{x: 1114, y: 565},
+{x: 642, y: 678},
+{x: 935, y: 695},
+{x: 1086, y: 687},
+{x: 294, y: 671},
+{x: 1213, y: 686},
+{x: 361, y: 784},
+{x: 449, y: 789},
+{x: 774, y: 788},
+{x: 553, y: 791},
+{x: 659, y: 787},
+{x: 288, y: 536},
+{x: 455, y: 408},
+{x: 148, y: 401},
+{x: 376, y: 413},
+{x: 286, y: 414},
+{x: 79, y: 403},
+{x: 337, y: 308},
+{x: 484, y: 305},
+{x: 565, y: 423},
+{x: 698, y: 436},
+{x: 479, y: 543},
+{x: 568, y: 551},
+{x: 648, y: 551},
+{x: 725, y: 561},
+{x: 406, y: 540},
+{x: 804, y: 549},
+{x: 898, y: 170},
+{x: 785, y: -254},
+{x: 625, y: -163},
+{x: 778, y: -163},
+{x: 911, y: -167},
+{x: 616, y: -75},
+{x: 599, y: -7},
+{x: 781, y: -96},
+{x: 765, y: -33},
+{x: 766, y: 33},
+{x: 694, y: -32},
+{x: 695, y: 37},
+],
+NumF1m: 29, a3: [
+{x: 751, y: 201},
+{x: 77, y: 287},
+{x: 705, y: 311},
+{x: 883, y: 318},
+{x: 951, y: 317},
+{x: 1116, y: 295},
+{x: 1665, y: 318},
+{x: 1358, y: 320},
+{x: 1524, y: 425},
+{x: 873, y: 469},
+{x: 999, y: 597},
+{x: 552, y: 707},
+{x: 1118, y: 712},
+{x: 254, y: 588},
+{x: 237, y: 316},
+{x: 289, y: 428},
+{x: 96, y: 424},
+{x: 520, y: 323},
+{x: 590, y: 476},
+{x: 660, y: 579},
+{x: 414, y: 569},
+{x: 746, y: 86},
+{x: 765, y: -225},
+{x: 584, y: -127},
+{x: 579, y: -61},
+{x: 750, y: -148},
+{x: 744, y: -85},
+{x: 743, y: -20},
+{x: 661, y: -15},
+]};
+
+
+//********************************
+let osas=document.querySelectorAll('[id^="osa1"],[id^="osa2"]');
+//******************************
+var swiper3 = new Swiper('.swy3', {
+	//slidesPerView: 'auto',
+	loop: true,
+	navigation: {prevEl:'.sw_btn_next',nextEl:'.sw_btn_prev'}});
+const sloud=[...document.querySelectorAll('.slid1')]; 
+//****************************************//
+//******************************
+var swiper3_2 = new Swiper('.swy3_2', {
+	loop: true,
+	navigation: {prevEl:'.sw_btn_next_2',nextEl:'.sw_btn_prev_2'}});
+const sloud_2=[...document.querySelectorAll('.slid1_2')]; 
+//****************************************//
+//******************************
+var swiper3_3 = new Swiper('.swy3_3', {
+	loop: true,
+	navigation: {prevEl:'.sw_btn_next_3',nextEl:'.sw_btn_prev_3'}});
+const sloud_3=[...document.querySelectorAll('.slid1_3')]; 
+//****************************************//
+//******************************
+var swiper3_4 = new Swiper('.swy3_4', {
+	loop: true,
+	navigation: {prevEl:'.sw_btn_next_4',nextEl:'.sw_btn_prev_4'}});
+const sloud_4=[...document.querySelectorAll('.slid1_4')]; 
+//****************************************//
+
+
+let nom,sex,birt,ava,ssil;
+let cur=curry(12);// курсор персон
+let okur=cur;
+fwd.innerText=+cur+1;
+bck.innerText=+cur-1;
+
+/*
+const ico=[//иконы жизненных вех
+'<i class="lab la-twitter"></i>',
+'<i class="lab la-twitter"></i>',
+'<i class="lab la-twitter"></i>',
+'<i class="lab la-twitter"></i>',//fa-brands fa-apple
+'<i class="lab la-twitter"></i>',//fa-solid fa-skull
+'<i class="lab la-twitter"></i>',//fa-solid fa-skull
+'<i class="lab la-twitter"></i>',//<i class="lab la-activity"></i>
+'<i class="lab la-twitter"></i>',//lab la-paypal
+];
+*/
+
+
+
+
+function foton(x,pisex,way){ // фото
+	if (way) 
+	return `<img class="avatar${x}" src="gr1/${way}"'`;
+
+	return `<img class="avatar${x}" src="https://xsgames.co/randomusers/avatar.php?g=`+
+		((pisex)?'':'fe')+
+		'male"';
+	}
+
+function info1(i){
+	let x=pers[i];
+	let y=[];
+	let jpeg='';
+	let nom4='';
+	let iddi='';
+	let fsz='7';
+	let zak='-1';
+	if(x.hasOwnProperty('INDI')){
+		iddi=x['INDI'];
+		}	
+	if(x.hasOwnProperty('FSZ')){
+		fsz=[x['FSZ']];
+		}			
+	if(x.hasOwnProperty('JPG')){
+		jpeg=[x['JPG']];
+		}
+	if(x.hasOwnProperty('NOM4')){
+		nom4=[x['NOM4']];
+		}	
+	if(x.hasOwnProperty('NOTE')){
+		zak=x['NOTE']-1;
+		let py=note[x['NOTE']-1];
+		y=py['CONT'].map(i=>i);
+		}
+	
+	let deade='';
+	if (x.hasOwnProperty('DEAT')){
+	  if (x['DEAT'].hasOwnProperty('PLAC')) deade=x['DEAT']['PLAC']}
+	  
+	let birte='';
+	if (x.hasOwnProperty('BIRT')){
+	  if (x['BIRT'].hasOwnProperty('PLAC')) birte=x['BIRT']['PLAC']}	  
+	  
+	const nomad=x['NAME']??'//';
+	if (!nomad.split(' ')[0]) nom4='&nbsp;'; // а то подвал половинной высоты
+	return {
+	nom:nomad,
+	nom1:nomad.split(' ')[0],
+	nom2:nomad.split(' ')[1],
+
+	nom3:nomad.replace(/(.*)\/(.*)\//,'$2'),
+	nom4:nom4,
+	sex:x['SEX']=='M'??'M',
+	birt:(x.hasOwnProperty('BIRT'))?x['BIRT']['DATE']??'':'',
+	dead:(x.hasOwnProperty('DEAT'))?x['DEAT']['DATE']??'':'',
+	
+	deade:deade,
+	birte:birte,
+	cont:y,
+	ava:(x.hasOwnProperty('AVA'))?x['AVA'][0]:'',
+	jpeg: jpeg,
+	iddi: iddi,
+	fsz: fsz,
+	zak: zak,
+	}
+}
+
+
+function info2(i){
+	let x=metr[i];
+	let y1,y2,y3;
+	
+	if(x.hasOwnProperty('TYPE'))
+	  {y1=x['TYPE']} else {y1=''}
+	if(x.hasOwnProperty('METR'))
+	  {y2=x['METR']} else {y2=''}	  
+	if(x.hasOwnProperty('LOCK'))
+	  {y3=x['LOCK']} else {y3=''}	  
+	
+	return {
+	type:y1,
+	metr:y2,
+	lock:y3,
+	}
+}
+let u;
+
+
+function inmass(x){// наличие строки в массиве p['nom4']
+let a=['Саша','Аня','Аля','Юля','Юра','Петр','Петя', 'Иван', 'Влас', 'Маря',
+ 'Миша', 'Галя','Катя','Валя', 'Коля','Ваня', 'Вася', 'Нюра', 'Яков', 'Дуня',
+ 'Глеб','Нина','Толя','Егор','Тоня','Таня','Рая','Витя','Геля','Вера','Женя','Вика',
+ 'Зина','Рома','Маша','Лена','Дима','Зоя','Анна','Люба','Шура',
+ 'Лиля','Вова','Алла','Люда','Надя','Толик','','',
+ ].filter(x=>x);
+ //'','',
+for (let i in a)
+	{if (a[i]==x) return true}
+return false;}
+
+
+
+function main(cur){ // активация персоны
+	
+	document.body.dataset.x=cur;
+
+	let x=pers[ cur ]; 
+	if(!x)return ['dumn'];
+	let j=null;
+	if(x.hasOwnProperty('INDI')){j=x['INDI']}
+	if(!j)return ['xyu'];
+	let m1=[],m2=[],m3=[],m4=[],m5=[];
+
+	nom=x['NAME']??'//';
+	sex=x['SEX']=='M'??'M';
+	birt=(x.hasOwnProperty('BIRT'))?x['BIRT']['DATE']??'':'';
+
+
+	let r=null;
+	if(x.hasOwnProperty('FAMC')){r=x['FAMC']}
+	if(r){
+		r--;
+		for (var k in fam[r]){
+		if(k=='HUSB'){m1.push(fam[r][k])}
+		if(k=='WIFE'){m1.push(fam[r][k])}
+		if(k=='CHIL'){fam[r][k].forEach(y=>{if(y!==j)m2.push(y)})}
+		}
+	}
+	let h=[];
+	if(x.hasOwnProperty('FAMS')){h=x['FAMS']}
+
+	h.forEach(x2=>{
+		x2--;
+		for (var k in fam[x2]){
+		if(k=='HUSB'){if(fam[x2][k]!==j)m3.push(fam[x2][k])}
+		if(k=='WIFE'){if(fam[x2][k]!==j)m3.push(fam[x2][k])}
+		
+		if(k=='CHIL'){fam[x2][k].forEach(y=>{if(y!==j)m4.push(y)})}
+		}
+	});
+
+	if(x.hasOwnProperty('MB')){m5=x['MB'].map(i=>i)}
+	u=[m1,m2,m3,m4,m5];
+
+	let p=info1(cur);
+	ssil='<br><a href="http://pet/?ava='+info1(cur)['ava']+'">http://pet/?ava='+
+	info1(cur)['ava']+'</a>';
+	tr0.innerHTML='<td style="text-align:center;">'+
+	foton(1,p['sex'],p['jpeg'])+
+
+' title="'+nom.split(' ')[0]+
+'">'+
+'<br>'+
+nom.replace('//','')+
+'<br>'+
+info1(cur)['birt']+
+((info1(cur)['birte'])?('<br>'+info1(cur)['birte']):'')+
+
+'<br>'+
+info1(cur)['dead']+
+((info1(cur)['deade'])?('<br>'+info1(cur)['deade']):'')+
+''+//http://pet/?ava=12696
+((info1(cur)['ava'])?ssil:'')+
+'</td>';
+
+
+//*********05050505505055050550505505055505050505050
+
+tr05.style.display=['none','table-row',][+pers[cur].hasOwnProperty('NOTE')];
+
+//----------11111111111111111111111111111111111111111родитель
+tr1.setAttribute('data-vw',['0','1'][+!!u[0].length]);
+tr1.style.display=['none','table-row',][+!!u[0].length];
+if(!u[0].length)
+{tr1.innerHTML='<td style="text-align:center;"></td>';}
+else{
+tr1.innerHTML='<td style="text-align:center;">'+
+
+
+'<div class="wr1">'+
+'<button style="margin-right: 22px;background: none;border: none;" data-n="15">Родители</button>'+
+'<label id="wr11">'+
+u[0].map(x=>{
+const p=info1(x-1);
+return '<article class="art2">'+
+	foton(2,p['sex'],p['jpeg'])+
+' data-n="'+
+x+'" onclick="cur='+
+(x-1)+'; main(cur);"><p class="vem1">'+p['nom1']+'<br>'+
+'<a style="color:transparent">.</a>'+p['nom2']+'<br> '+p['nom3']+'</p>'+
+'</article>';
+
+}).join('')+
+'</label>'+
+'</div>'
+
+'<br>'+
+u[0].map(x=>info1(x-1)['nom']).join('<br>')+
+'</td>';}
+//-------------222222222222222222222222222222222222222222222222222222222 брат
+
+tr2.setAttribute('data-vw',['0','1'][+!!u[1].length]);
+tr2.style.display=['none','table-row',][+!!u[1].length];
+if(!u[1].length)
+	{tr2.innerHTML='<td style="text-align:center;"></td>';}
+else{
+	tr2.innerHTML='<td style="text-align:center;">'+
+	'<div id="wr2" style="justify-content:space-evenly;">'+//around
+	'  <button id="wr21">Братья<br> и сестры <br></button>'+
+	'<article class="art3">'+
+	u[1].map(x=>{
+		const p=info1(x-1);		
+		return '	<button class="vem2">'+
+			foton(3,p['sex'],p['jpeg'])+
+		' title="'+
+		p['nom1']+'" onclick="cur='+
+		(x-1)+'; main(cur);">'+
+		'		<div style="text-align: center">'+
+		'			<span  style="font-size:'+p['fsz']+'px">'+
+		((p['nom4'])?p['nom4']:p['nom1'])+
+		'</span>'+
+		'		</div>'+
+		'	</button>';
+	}).join('')+
+	'</article></div>'+
+	'</td>';}
+	
+//******************33333333333333333333333333333333333333333333333
+//                  Супруг
+tr3.setAttribute('data-vw',['0','1'][+!!u[2].length]);
+tr3.style.display=['none','table-row',][+!!u[2].length];
+if(!u[2].length)
+	{tr3.innerHTML='<td style="text-align:center;"></td>';}
+else{
+	tr3.innerHTML='<td style="text-align:center;">'+
+
+	'<div id="wr3"><button id="wr31">Супруг'+
+	((info1(cur)['sex'])?'а':'')+  '.</button>'+
+	'<article class="art4">'+
+
+	u[2].map(x=>{
+		const p=info1(x-1);
+		return '<div class="vem3">'+
+			foton(2,p['sex'],p['jpeg'])+
+		' data-n="" '+
+		'onclick="cur='+
+		(x-1)+'; main(cur);"'+
+		'>'+
+		'<p class="vem1">'+p['nom1']+'<br>'+
+		'<a style="color:transparent">.</a>'+p['nom2']+'<br> '+p['nom3']+'</p>'+
+		'</div>';
+	}).join('')+
+	'</article>'+
+	'</td>';}
+//******44444444444444444444444444444444444444444444 дети
+tr4.setAttribute('data-vw',['0','1'][+!!u[3].length]);
+tr4.style.display=['none','table-row',][+!!u[3].length];
+if(!u[3].length)
+	{tr4.innerHTML='<td style="text-align:center;"></td>';}
+else{
+	tr4.innerHTML='<td style="text-align:center;">'+
+	'<div id="wr2">'+
+	'  <button id="wr21">Дети</button>'+
+	'<article class="art2">'+
+	u[3].map(x=>{
+		const p=info1(x-1);
+		return '	<button class="vem'+((inmass(p['nom4']))?5:2)+'">'+	
+			foton(3,p['sex'],p['jpeg'])+
+		' title="'+
+		((p['nom4'])?p['nom4']:p['nom1'])+
+		''+
+		((debug)?p['iddi']:'')+
+		'" onclick="cur='+
+		(x-1)+'; main(cur);">'+
+		'<div style="text-align: center">'+
+		'<span style="font-size:'+p['fsz']+'px">'+		
+		((p['nom4'])?p['nom4']:p['nom1'])+
+		'</span>'+
+		'		</div>'+
+		'	</button>';
+	}).join('')+
+	'</article></div>'+
+	'</td>';}
+//*****555555555555555555555555555555555555555555555555555
+
+
+tr5.innerHTML='<td style="text-align:center;">'+
+((team[cur])?team[cur].map(k=>
+
+'<a class="pec" title="'+k[0]+'" href="http://pet/?ava='+k[1]+'" target=_blank>'+k[2]+'</a>'
+
+).join(''):'')+
+'</td>';
+
+tr5.setAttribute('data-vw',['0','1'][+!!team[cur]]);
+tr5.style.display=['none','table-row',][+!!team[cur]];
+///////////////////////////////////////
+
+swiper3.slideTo(0, 0, true); // перемотка на первый кадр
+swiper3_2.slideTo(0, 0, true);
+swiper3_3.slideTo(0, 0, true);
+swiper3_4.slideTo(0, 0, true);
+
+
+const swdall=[...document.querySelectorAll('.swiper-slide')];
+
+swdall.forEach((x)=>{x.innerHTML='';});
+
+let txt=info1(cur).cont;
+
+let t1=((debug)?'<i class="number_note">'+(+info1(cur).zak+1)+') <span style="color:black; font-style: normal;">':'');
+let t2=((debug)?'</span></i>':'');
+if ( txt.length==1)txt.forEach((x,i)=>{sloud[i].innerHTML=t1+x+t2;});
+if ( txt.length==2)txt.forEach((x,i)=>{sloud_2[i].innerHTML=t1+x+t2;});
+if ( txt.length==3)txt.forEach((x,i)=>{sloud_3[i].innerHTML=t1+x+t2;});
+if ( txt.length==4)txt.forEach((x,i)=>{sloud_4[i].innerHTML=t1+x+t2;});
+
+
+tr05.style.display=['none','table-row',][+(txt.length==1)];tr05.setAttribute('data-vw',['0','1'][+(txt.length==1)]);
+tr05_2.style.display=['none','table-row',][+(txt.length==2)];tr05_2.setAttribute('data-vw',['0','1'][+(txt.length==2)]);
+tr05_3.style.display=['none','table-row',][+(txt.length==3)];tr05_3.setAttribute('data-vw',['0','1'][+(txt.length==3)]);
+tr05_4.style.display=['none','table-row',][+(txt.length==4)];tr05_4.setAttribute('data-vw',['0','1'][+(txt.length==4)]);
+
+let uley=+(txt.length<2); // колво заметок
+
+osas.forEach(x=>x.style.display=['block','none'][uley]);
+//********
+	document.querySelector('#dor'+okur)?.setAttribute('fill',['lime','white'][+!debug]);
+	document.querySelector('#dor'+cur)?.setAttribute('fill','violet');
+	mapka.style.transform=plan(coor['a1'][cur].x);
+	okur=cur;
+//******
+let cve=[...document.querySelectorAll('[data-vw="1"]')];
+
+cve.pop();
+cve.forEach((x,i)=>{x.style.background=['#ded','#00000010'][i%2]});	
+}//end of main
+
+
+function dendy2(x){/// установ активной персоны
+	document.querySelector('#dor'+cur).setAttribute('fill',['lime','white'][+!debug]);
+	cur=x??10;
+	main(cur);
+	fwd.innerText=cur+1;
+	bck.innerText=cur-1;
+	document.querySelector('#dor'+cur).setAttribute('fill','violet');
+	mapka.style.transform=plan(coor['a1'][cur].x);
+	serw.style.left='101vw';
+}
+
+
+function plan(x){ // двигаю карту персоной в центр окна
+	return 'translatex('+(((mawka.offsetWidth/2)-x/62.47*11.5)|0)+'px)';
+}
+
+
+
+linx.innerHTML=fam.map((a,i)=>{// линии связи на карту
+	let s='';
+	let o=coor['a3'][i]; o={x:o.x, y:o.y+320}; // переобувание
+	s='';
+	if(a.hasOwnProperty('HUSB')){let f={
+	x:(coor['a1'][a['HUSB']-1].x+coor['a2'][a['HUSB']-1].x)/2,
+
+	y:coor['a2'][a['HUSB']-1].y+320};
+		s+='<line x1="'+(o.x)+'" y1="'+(o.y)+'" x2="'+(f.x)+'" y2="'+(f.y)+'"  />\n';}	
+
+	if(a.hasOwnProperty('WIFE')){let f={
+	x:(coor['a1'][a['WIFE']-1].x+coor['a2'][a['WIFE']-1].x)/2,
+
+	y:coor['a2'][a['WIFE']-1].y+320};
+		s+='<line x1="'+(o.x)+'" y1="'+(o.y)+'" x2="'+(f.x)+'" y2="'+(f.y)+'"  />\n';}	
+				
+	if(a.hasOwnProperty('CHIL')){
+		a['CHIL'].forEach(j=>{
+		let f={
+		x:(coor['a1'][j-1].x+coor['a2'][j-1].x)/2,
+
+		y:coor['a1'][j-1].y+320};
+			s+='<line x1="'+(o.x)+'" y1="'+(o.y)+'" x2="'+(f.x)+'" y2="'+(f.y)+'"  />\n';
+			
+			});
+		}		
+	return s
+}).join('\n');
+
+
+mens.innerHTML=coor['a1'].map((x,i)=>// квадраты персон на карте
+'<rect id="dor'+i+'" x="'+coor['a1'][i].x+'" y="'+(coor['a1'][i].y+320)+'" width="'+(coor['a2'][i].x-coor['a1'][i].x)+'" height="'+(coor['a2'][i].y-coor['a1'][i].y)+'" fill="'+((cur==i)?'violet':'white')+
+'" onclick="cur='+i+'; main(cur);"'+
+' />'
+).join('/r/n');
+
+
+
+let serold='';
+
+function seri(y){// движок поиска
+let leo;	
+if (isNaN(y)){
+	  
+	if(['JAN','FEB','MAR','APR','MAY','JUL','JUN','SEP','OCT','NOV','DEC'].filter(x=>y.includes(x)).length)
+	  {
+		leo=pers.filter(x=>
+
+		((x.hasOwnProperty('DEAT'))?
+			(x['DEAT'].hasOwnProperty('DATE'))?
+			x['DEAT']['DATE'].includes(y):false
+			:false)||
+			
+		((x.hasOwnProperty('BIRT'))?
+			(x['BIRT'].hasOwnProperty('DATE'))?
+			x['BIRT']['DATE'].includes(y):false
+			:false)	
+			
+			);  
+	  }
+	  else 
+	  {leo=pers.filter(x=>x['NAME'].toUpperCase().includes(y.toUpperCase()))}
+}
+else 
+{
+	leo=pers.filter(x=>
+	((x.hasOwnProperty('DEAT'))?
+		(x['DEAT'].hasOwnProperty('DATE'))?
+		x['DEAT']['DATE'].includes(y):false
+		:false)||
+		
+	((x.hasOwnProperty('BIRT'))?
+		(x['BIRT'].hasOwnProperty('DATE'))?
+		x['BIRT']['DATE'].includes(y):false
+		:false)			
+		);
+}
+
+
+if (serold==y){
+	leo=pers.filter(x=>{
+	serold='';
+	return (x.hasOwnProperty('NOTE'))?
+		(note[x['NOTE'][0]-1].hasOwnProperty('CONT'))?
+		note[x['NOTE'][0]-1].CONT[0].toUpperCase().includes(y.toUpperCase()):false
+		:false	
+		});
+	}
+	else 
+	{serold=y;}	
+if (y===''){leo=pers.map(x=>x)}	
+// пост-фильтр на фотки
+if (enot.checked) {leo=leo.filter(x=>x.hasOwnProperty('JPG'))}
+
+// вывод рез поиска 
+let bir=-1;
+ser.innerHTML=leo.map((x,i)=>{
+	if(x.hasOwnProperty('JPG')){
+	return ((bir==i)?'<br>':'')+'<img class="dendy" src="gr1/'+(x['JPG'])+'" onclick="dendy2('+(x['INDI']-1)+')">'	
+	}
+	else {bir=i+1; 
+	return ((i)?'<br>':'')+'<button onclick="dendy2('+(x['INDI']-1)+');">'+(x['INDI']-1)+'.'+(x['NAME'])+'</button>'
+	}
+}).join('');
+
+
+
+if (leo.length){nemo.innerHTML='Найдено: '+leo.length;}
+else {
+	nemo.innerHTML='Найдено: 0';
+}
+}// End seri
+
+
+jeep.addEventListener("keyup", ()=>{
+	event.preventDefault();
+	if (event.key==='Enter') syyr.onclick();
+});
+
+let debug=!!0; 
+main(cur);
+seri('');
+
+
+if (debug) document.querySelector('body').classList.add('bodyaf');
+fwd.style.display=(debug)?'block':'none';
+bck.style.display=(debug)?'block':'none';
+
+function curry(){return 4}// стартовый чел
+</script>   
+</body>
+</html>
